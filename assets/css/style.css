@@ -125,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .social-links a:hover {
   background: #1c7d32;
+  box-shadow: 0 0 15px rgba(28, 125, 50, 0.7);
 }
 
 @media (max-width: 992px) {
@@ -193,6 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #12d640;
+  text-shadow: 0 0 10px rgba(18, 214, 64, 0.5);
   text-decoration: none;
 }
 
@@ -665,7 +667,9 @@ section .container {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: #09203a;
+  background: rgba(9, 32, 58, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px 40px;
   transition: all ease-in-out 0.3s;
   margin: 10px
@@ -720,7 +724,7 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #042e5f;
+  background: rgba(4, 46, 95, 0.85);
   border-color: #1c7d32;
 }
 
@@ -781,6 +785,7 @@ section .container {
 
 .portfolio .portfolio-wrap {
   transition: 0.3s;
+  border-radius: 8px;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -942,11 +947,13 @@ section .container {
   color: #fff;
   line-height: 1;
   margin-right: 12px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .contact .info-box .social-links a:hover {
   color: #12d640;
+  text-shadow: 0 0 10px rgba(18, 214, 64, 0.5);
+  transform: scale(1.1);
 }
 
 .contact .php-email-form {
@@ -1105,4 +1112,26 @@ section .container {
     right: 0;
     transform: translateX(-50%);
   }
+}
+
+
+/* Modern Skill Icon Interactions */
+.skills_one > div {
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.skills_one > div:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.portfolio .portfolio-wrap img {
+  transition: transform 0.5s ease;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.1);
 }
